@@ -1,0 +1,135 @@
+:root {
+    --soft-blue-p: hsl(215, 51%, 70%);
+    --cyan-p: hsl(178, 100%, 50%);
+
+    --very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /*Stylishing*/
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: var(--soft-blue-p);
+    background-color: var(--very-dark-blue-main-BG);
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    background-color: var(--very-dark-blue-card-BG);
+    border-radius: 0.8rem;
+    overflow: hidden;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 370px;
+  }
+
+.img-nft {
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.nft {
+    width: 100%;
+}
+
+h3 {
+    padding: 1rem 0;
+}
+
+.title, .name {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.flex {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.price-container {
+    justify-content: space-between;
+}
+
+.value {
+    color: var(--cyan-p);
+    font-weight: 400;
+}
+
+hr.solid {
+    border: 0;
+    border-top: 1px solid var(--very-dark-blue-line);
+  }
+
+  .profile {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .avatar {
+    width: 10%;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+  }
